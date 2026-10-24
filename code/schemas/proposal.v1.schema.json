@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pf-rpn.local/schemas/proposal.v1.schema.json",
+  "title": "M2-PF-RPN proposal.v1",
+  "description": "Stable interchange contract for Module 1 landslide candidates.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "image_id",
+    "event_id",
+    "model_version",
+    "candidates",
+    "meta"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "proposal.v1"},
+    "image_id": {"type": "string", "minLength": 1},
+    "event_id": {"type": "string", "minLength": 1},
+    "model_version": {"type": "string", "minLength": 1},
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "candidate_id",
+          "bbox_xyxy",
+          "objectness",
+          "proposal_score",
+          "level",
+          "uncertainty",
+          "roi_feature_ref"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "candidate_id": {"type": "string", "minLength": 1},
+          "bbox_xyxy": {
+            "type": "array",
+            "items": {"type": "number"},
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "objectness": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+          "proposal_score": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+          "level": {"type": "integer", "minimum": 0, "maximum": 2},
+          "uncertainty": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+          "roi_feature_ref": {
+            "type": "string",
+            "pattern": "^[^:]+[.]npz:[^:]+$"
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "num_queries",
+        "num_pseudo_tokens",
+        "sp_thr",
+        "sp_iter_num",
+        "topk",
+        "modalities_used"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "num_queries": {"type": "integer", "minimum": 0},
+        "num_pseudo_tokens": {"type": "integer", "minimum": 0},
+        "sp_thr": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+        "sp_iter_num": {"type": "integer", "minimum": 0},
+        "topk": {"type": "integer", "minimum": 0},
+        "modalities_used": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

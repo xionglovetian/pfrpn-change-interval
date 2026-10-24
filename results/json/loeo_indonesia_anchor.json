@@ -1,0 +1,60 @@
+{
+  "config": "/root/autodl-tmp/data_loeo_indonesia_long/config.py",
+  "checkpoint": "/root/autodl-tmp/PF-RPN/work_dirs/m2_pf_rpn/loeo/indonesia/A4_add_change/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 526,
+  "num_gt_boxes": 1714,
+  "AR": {
+    "AR@100": 0.6159366966176963,
+    "AR@300": 0.7161424277618141,
+    "AR@900": 0.7825919548674539
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.49066511085180864,
+    "recall@300": 0.6085180863477246,
+    "recall@900": 0.7123687281213535
+  },
+  "AR_coco_style": 0.32456529672808254,
+  "recall_by_size": {
+    "small": 0.6619718309859155,
+    "medium": 0.8925373134328358,
+    "large": 0.9666666666666667
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.5796076110026058,
+      0.6498943913815698
+    ],
+    "AR@300": [
+      0.6820424198780926,
+      0.747326172208235
+    ],
+    "AR@900": [
+      0.7550740201532234,
+      0.807426484665891
+    ]
+  },
+  "AR_by_event": {
+    "indonesia": {
+      "AR@100": 0.6159366966176963,
+      "AR@300": 0.7161424277618141,
+      "AR@900": 0.7825919548674539
+    }
+  },
+  "gt_by_event": {
+    "indonesia": 1714
+  },
+  "size_counts": {
+    "small": 1349,
+    "medium": 335,
+    "large": 30
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0,
+    "recall@1.0FPPI": 0.0,
+    "recall@10.0FPPI": 0.2707117852975496
+  }
+}

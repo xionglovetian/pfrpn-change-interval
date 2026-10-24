@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pf-rpn.local/schemas/report.v1.json",
+  "title": "M3 EG-RR report.v1",
+  "type": "object",
+  "required": [
+    "schema_version", "candidate_id", "landslide_probability", "hazard_score", "hazard_level",
+    "risk_level", "risk_level_reason", "evidence_ids", "uncertainty",
+    "possible_false_positive_sources", "human_review_required", "report_text"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"const": "report.v1"},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "landslide_probability": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "hazard_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "hazard_level": {"enum": ["very_low", "low", "moderate", "high", "very_high", "unknown"]},
+    "risk_level": {"type": "null"},
+    "risk_level_reason": {"type": "string"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}},
+    "uncertainty": {"enum": ["low", "medium", "high"]},
+    "possible_false_positive_sources": {"type": "array", "items": {"type": "string"}},
+    "human_review_required": {"type": "boolean"},
+    "report_text": {"type": "string", "minLength": 1},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim_id", "text", "claim_type", "evidence_ids", "confidence"],
+        "additionalProperties": true,
+        "properties": {
+          "claim_id": {"type": "string"},
+          "text": {"type": "string"},
+          "claim_type": {"enum": ["observation", "inference", "recommendation", "limitation"]},
+          "evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "drivers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["evidence_id", "effect", "statement"],
+        "additionalProperties": true,
+        "properties": {
+          "evidence_id": {"type": "string"},
+          "effect": {"enum": ["increase", "decrease", "neutral"]},
+          "statement": {"type": "string"}
+        }
+      }
+    },
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "evidence_graph_ref": {"type": ["string", "null"]},
+    "provenance": {"type": "object", "additionalProperties": true}
+  }
+}

@@ -1,0 +1,3 @@
+=== chain5: 补齐 plus1 模型的交叉评测 Tue Oct 20 10:47:13 CST 2026 ===
+plus1 train -> long test  AR@100 0.5283  AR@300 0.6588  AR@900 0.7583 | small 0.661 medium 0.890 large 0.904
+=== chain5 done Tue Oct 20 10:49:00 CST 2026 ===

@@ -1,0 +1,61 @@
+{
+  "proposal": {
+    "schema_version": "proposal.v1",
+    "candidate_id": "tile_000123_000001",
+    "image_id": "tile_000123",
+    "event_id": "event_001",
+    "bbox_xyxy": [120.0, 80.0, 310.0, 260.0],
+    "objectness": 0.91,
+    "proposal_score": 0.86,
+    "level": 2,
+    "uncertainty": 0.07,
+    "roi_feature_ref": "tile_000123.features.npz:000001"
+  },
+  "verification": {
+    "schema_version": "verification.v1",
+    "candidate_id": "tile_000123_000001",
+    "is_landslide": true,
+    "landslide_probability": 0.93,
+    "calibrated_probability": 0.89,
+    "hard_negative_probabilities": {
+      "bare_soil": 0.03,
+      "road_cut": 0.04,
+      "quarry_or_construction": 0.02,
+      "cloud_shadow": 0.01
+    },
+    "mask": {
+      "format": "coco_rle",
+      "size": [512, 512],
+      "counts": "MOCK_RLE_STRING"
+    },
+    "boundary_quality": 0.72,
+    "uncertainty": {
+      "aleatoric": 0.08,
+      "epistemic": 0.11,
+      "total": 0.13
+    },
+    "decision": "accept",
+    "review_required": false
+  },
+  "gis_context": {
+    "slope_mean_deg": 28.4,
+    "slope_max_deg": 41.2,
+    "aspect_mean_deg": 187.0,
+    "curvature_mean": 0.18,
+    "elevation_mean_m": 1260.0,
+    "rainfall_7d_mm": 182.0,
+    "fault_distance_m": 340.0,
+    "river_distance_m": 120.0,
+    "road_distance_m": 850.0
+  },
+  "spectral_context": {
+    "ndvi_drop": 0.31,
+    "ndwi_change": 0.08,
+    "nbr_drop": 0.22
+  },
+  "sar_context": {
+    "vv_change_db": 2.7,
+    "vh_change_db": 1.9,
+    "coherence_drop": 0.34
+  }
+}

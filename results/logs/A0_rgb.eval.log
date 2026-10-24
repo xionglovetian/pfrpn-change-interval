@@ -1,0 +1,98 @@
+Loads checkpoint by local backend from path: /root/autodl-tmp/work_dirs/w1/A0_rgb/epoch_8.pth
+The model and loaded state dict do not match exactly
+
+size mismatch for fusion.gate_layers.0.0.weight: copying a param with shape torch.Size([128, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([128, 1024, 1, 1]).
+size mismatch for fusion.gate_layers.0.2.weight: copying a param with shape torch.Size([1, 128, 1, 1]) from checkpoint, the shape in current model is torch.Size([4, 128, 1, 1]).
+size mismatch for fusion.gate_layers.0.2.bias: copying a param with shape torch.Size([1]) from checkpoint, the shape in current model is torch.Size([4]).
+size mismatch for fusion.gate_layers.1.0.weight: copying a param with shape torch.Size([256, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([256, 2048, 1, 1]).
+size mismatch for fusion.gate_layers.1.2.weight: copying a param with shape torch.Size([1, 256, 1, 1]) from checkpoint, the shape in current model is torch.Size([4, 256, 1, 1]).
+size mismatch for fusion.gate_layers.1.2.bias: copying a param with shape torch.Size([1]) from checkpoint, the shape in current model is torch.Size([4]).
+size mismatch for fusion.gate_layers.2.0.weight: copying a param with shape torch.Size([512, 1024, 1, 1]) from checkpoint, the shape in current model is torch.Size([512, 4096, 1, 1]).
+size mismatch for fusion.gate_layers.2.2.weight: copying a param with shape torch.Size([1, 512, 1, 1]) from checkpoint, the shape in current model is torch.Size([4, 512, 1, 1]).
+size mismatch for fusion.gate_layers.2.2.bias: copying a param with shape torch.Size([1]) from checkpoint, the shape in current model is torch.Size([4]).
+missing keys in source state_dict: modality_encoders.sar.patch_embed.projection.weight, modality_encoders.sar.patch_embed.projection.bias, modality_encoders.sar.patch_embed.norm.weight, modality_encoders.sar.patch_embed.norm.bias, modality_encoders.sar.stages.0.blocks.0.norm1.weight, modality_encoders.sar.stages.0.blocks.0.norm1.bias, modality_encoders.sar.stages.0.blocks.0.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.0.blocks.0.attn.w_msa.relative_position_index, modality_encoders.sar.stages.0.blocks.0.attn.w_msa.qkv.weight, modality_encoders.sar.stages.0.blocks.0.attn.w_msa.qkv.bias, modality_encoders.sar.stages.0.blocks.0.attn.w_msa.proj.weight, modality_encoders.sar.stages.0.blocks.0.attn.w_msa.proj.bias, modality_encoders.sar.stages.0.blocks.0.norm2.weight, modality_encoders.sar.stages.0.blocks.0.norm2.bias, modality_encoders.sar.stages.0.blocks.0.ffn.layers.0.0.weight, modality_encoders.sar.stages.0.blocks.0.ffn.layers.0.0.bias, modality_encoders.sar.stages.0.blocks.0.ffn.layers.1.weight, modality_encoders.sar.stages.0.blocks.0.ffn.layers.1.bias, modality_encoders.sar.stages.0.blocks.1.norm1.weight, modality_encoders.sar.stages.0.blocks.1.norm1.bias, modality_encoders.sar.stages.0.blocks.1.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.0.blocks.1.attn.w_msa.relative_position_index, modality_encoders.sar.stages.0.blocks.1.attn.w_msa.qkv.weight, modality_encoders.sar.stages.0.blocks.1.attn.w_msa.qkv.bias, modality_encoders.sar.stages.0.blocks.1.attn.w_msa.proj.weight, modality_encoders.sar.stages.0.blocks.1.attn.w_msa.proj.bias, modality_encoders.sar.stages.0.blocks.1.norm2.weight, modality_encoders.sar.stages.0.blocks.1.norm2.bias, modality_encoders.sar.stages.0.blocks.1.ffn.layers.0.0.weight, modality_encoders.sar.stages.0.blocks.1.ffn.layers.0.0.bias, modality_encoders.sar.stages.0.blocks.1.ffn.layers.1.weight, modality_encoders.sar.stages.0.blocks.1.ffn.layers.1.bias, modality_encoders.sar.stages.0.downsample.norm.weight, modality_encoders.sar.stages.0.downsample.norm.bias, modality_encoders.sar.stages.0.downsample.reduction.weight, modality_encoders.sar.stages.1.blocks.0.norm1.weight, modality_encoders.sar.stages.1.blocks.0.norm1.bias, modality_encoders.sar.stages.1.blocks.0.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.1.blocks.0.attn.w_msa.relative_position_index, modality_encoders.sar.stages.1.blocks.0.attn.w_msa.qkv.weight, modality_encoders.sar.stages.1.blocks.0.attn.w_msa.qkv.bias, modality_encoders.sar.stages.1.blocks.0.attn.w_msa.proj.weight, modality_encoders.sar.stages.1.blocks.0.attn.w_msa.proj.bias, modality_encoders.sar.stages.1.blocks.0.norm2.weight, modality_encoders.sar.stages.1.blocks.0.norm2.bias, modality_encoders.sar.stages.1.blocks.0.ffn.layers.0.0.weight, modality_encoders.sar.stages.1.blocks.0.ffn.layers.0.0.bias, modality_encoders.sar.stages.1.blocks.0.ffn.layers.1.weight, modality_encoders.sar.stages.1.blocks.0.ffn.layers.1.bias, modality_encoders.sar.stages.1.blocks.1.norm1.weight, modality_encoders.sar.stages.1.blocks.1.norm1.bias, modality_encoders.sar.stages.1.blocks.1.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.1.blocks.1.attn.w_msa.relative_position_index, modality_encoders.sar.stages.1.blocks.1.attn.w_msa.qkv.weight, modality_encoders.sar.stages.1.blocks.1.attn.w_msa.qkv.bias, modality_encoders.sar.stages.1.blocks.1.attn.w_msa.proj.weight, modality_encoders.sar.stages.1.blocks.1.attn.w_msa.proj.bias, modality_encoders.sar.stages.1.blocks.1.norm2.weight, modality_encoders.sar.stages.1.blocks.1.norm2.bias, modality_encoders.sar.stages.1.blocks.1.ffn.layers.0.0.weight, modality_encoders.sar.stages.1.blocks.1.ffn.layers.0.0.bias, modality_encoders.sar.stages.1.blocks.1.ffn.layers.1.weight, modality_encoders.sar.stages.1.blocks.1.ffn.layers.1.bias, modality_encoders.sar.stages.1.downsample.norm.weight, modality_encoders.sar.stages.1.downsample.norm.bias, modality_encoders.sar.stages.1.downsample.reduction.weight, modality_encoders.sar.stages.2.blocks.0.norm1.weight, modality_encoders.sar.stages.2.blocks.0.norm1.bias, modality_encoders.sar.stages.2.blocks.0.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.2.blocks.0.attn.w_msa.relative_position_index, modality_encoders.sar.stages.2.blocks.0.attn.w_msa.qkv.weight, modality_encoders.sar.stages.2.blocks.0.attn.w_msa.qkv.bias, modality_encoders.sar.stages.2.blocks.0.attn.w_msa.proj.weight, modality_encoders.sar.stages.2.blocks.0.attn.w_msa.proj.bias, modality_encoders.sar.stages.2.blocks.0.norm2.weight, modality_encoders.sar.stages.2.blocks.0.norm2.bias, modality_encoders.sar.stages.2.blocks.0.ffn.layers.0.0.weight, modality_encoders.sar.stages.2.blocks.0.ffn.layers.0.0.bias, modality_encoders.sar.stages.2.blocks.0.ffn.layers.1.weight, modality_encoders.sar.stages.2.blocks.0.ffn.layers.1.bias, modality_encoders.sar.stages.2.blocks.1.norm1.weight, modality_encoders.sar.stages.2.blocks.1.norm1.bias, modality_encoders.sar.stages.2.blocks.1.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.2.blocks.1.attn.w_msa.relative_position_index, modality_encoders.sar.stages.2.blocks.1.attn.w_msa.qkv.weight, modality_encoders.sar.stages.2.blocks.1.attn.w_msa.qkv.bias, modality_encoders.sar.stages.2.blocks.1.attn.w_msa.proj.weight, modality_encoders.sar.stages.2.blocks.1.attn.w_msa.proj.bias, modality_encoders.sar.stages.2.blocks.1.norm2.weight, modality_encoders.sar.stages.2.blocks.1.norm2.bias, modality_encoders.sar.stages.2.blocks.1.ffn.layers.0.0.weight, modality_encoders.sar.stages.2.blocks.1.ffn.layers.0.0.bias, modality_encoders.sar.stages.2.blocks.1.ffn.layers.1.weight, modality_encoders.sar.stages.2.blocks.1.ffn.layers.1.bias, modality_encoders.sar.stages.2.blocks.2.norm1.weight, modality_encoders.sar.stages.2.blocks.2.norm1.bias, modality_encoders.sar.stages.2.blocks.2.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.2.blocks.2.attn.w_msa.relative_position_index, modality_encoders.sar.stages.2.blocks.2.attn.w_msa.qkv.weight, modality_encoders.sar.stages.2.blocks.2.attn.w_msa.qkv.bias, modality_encoders.sar.stages.2.blocks.2.attn.w_msa.proj.weight, modality_encoders.sar.stages.2.blocks.2.attn.w_msa.proj.bias, modality_encoders.sar.stages.2.blocks.2.norm2.weight, modality_encoders.sar.stages.2.blocks.2.norm2.bias, modality_encoders.sar.stages.2.blocks.2.ffn.layers.0.0.weight, modality_encoders.sar.stages.2.blocks.2.ffn.layers.0.0.bias, modality_encoders.sar.stages.2.blocks.2.ffn.layers.1.weight, modality_encoders.sar.stages.2.blocks.2.ffn.layers.1.bias, modality_encoders.sar.stages.2.blocks.3.norm1.weight, modality_encoders.sar.stages.2.blocks.3.norm1.bias, modality_encoders.sar.stages.2.blocks.3.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.2.blocks.3.attn.w_msa.relative_position_index, modality_encoders.sar.stages.2.blocks.3.attn.w_msa.qkv.weight, modality_encoders.sar.stages.2.blocks.3.attn.w_msa.qkv.bias, modality_encoders.sar.stages.2.blocks.3.attn.w_msa.proj.weight, modality_encoders.sar.stages.2.blocks.3.attn.w_msa.proj.bias, modality_encoders.sar.stages.2.blocks.3.norm2.weight, modality_encoders.sar.stages.2.blocks.3.norm2.bias, modality_encoders.sar.stages.2.blocks.3.ffn.layers.0.0.weight, modality_encoders.sar.stages.2.blocks.3.ffn.layers.0.0.bias, modality_encoders.sar.stages.2.blocks.3.ffn.layers.1.weight, modality_encoders.sar.stages.2.blocks.3.ffn.layers.1.bias, modality_encoders.sar.stages.2.blocks.4.norm1.weight, modality_encoders.sar.stages.2.blocks.4.norm1.bias, modality_encoders.sar.stages.2.blocks.4.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.2.blocks.4.attn.w_msa.relative_position_index, modality_encoders.sar.stages.2.blocks.4.attn.w_msa.qkv.weight, modality_encoders.sar.stages.2.blocks.4.attn.w_msa.qkv.bias, modality_encoders.sar.stages.2.blocks.4.attn.w_msa.proj.weight, modality_encoders.sar.stages.2.blocks.4.attn.w_msa.proj.bias, modality_encoders.sar.stages.2.blocks.4.norm2.weight, modality_encoders.sar.stages.2.blocks.4.norm2.bias, modality_encoders.sar.stages.2.blocks.4.ffn.layers.0.0.weight, modality_encoders.sar.stages.2.blocks.4.ffn.layers.0.0.bias, modality_encoders.sar.stages.2.blocks.4.ffn.layers.1.weight, modality_encoders.sar.stages.2.blocks.4.ffn.layers.1.bias, modality_encoders.sar.stages.2.blocks.5.norm1.weight, modality_encoders.sar.stages.2.blocks.5.norm1.bias, modality_encoders.sar.stages.2.blocks.5.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.2.blocks.5.attn.w_msa.relative_position_index, modality_encoders.sar.stages.2.blocks.5.attn.w_msa.qkv.weight, modality_encoders.sar.stages.2.blocks.5.attn.w_msa.qkv.bias, modality_encoders.sar.stages.2.blocks.5.attn.w_msa.proj.weight, modality_encoders.sar.stages.2.blocks.5.attn.w_msa.proj.bias, modality_encoders.sar.stages.2.blocks.5.norm2.weight, modality_encoders.sar.stages.2.blocks.5.norm2.bias, modality_encoders.sar.stages.2.blocks.5.ffn.layers.0.0.weight, modality_encoders.sar.stages.2.blocks.5.ffn.layers.0.0.bias, modality_encoders.sar.stages.2.blocks.5.ffn.layers.1.weight, modality_encoders.sar.stages.2.blocks.5.ffn.layers.1.bias, modality_encoders.sar.stages.2.downsample.norm.weight, modality_encoders.sar.stages.2.downsample.norm.bias, modality_encoders.sar.stages.2.downsample.reduction.weight, modality_encoders.sar.stages.3.blocks.0.norm1.weight, modality_encoders.sar.stages.3.blocks.0.norm1.bias, modality_encoders.sar.stages.3.blocks.0.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.3.blocks.0.attn.w_msa.relative_position_index, modality_encoders.sar.stages.3.blocks.0.attn.w_msa.qkv.weight, modality_encoders.sar.stages.3.blocks.0.attn.w_msa.qkv.bias, modality_encoders.sar.stages.3.blocks.0.attn.w_msa.proj.weight, modality_encoders.sar.stages.3.blocks.0.attn.w_msa.proj.bias, modality_encoders.sar.stages.3.blocks.0.norm2.weight, modality_encoders.sar.stages.3.blocks.0.norm2.bias, modality_encoders.sar.stages.3.blocks.0.ffn.layers.0.0.weight, modality_encoders.sar.stages.3.blocks.0.ffn.layers.0.0.bias, modality_encoders.sar.stages.3.blocks.0.ffn.layers.1.weight, modality_encoders.sar.stages.3.blocks.0.ffn.layers.1.bias, modality_encoders.sar.stages.3.blocks.1.norm1.weight, modality_encoders.sar.stages.3.blocks.1.norm1.bias, modality_encoders.sar.stages.3.blocks.1.attn.w_msa.relative_position_bias_table, modality_encoders.sar.stages.3.blocks.1.attn.w_msa.relative_position_index, modality_encoders.sar.stages.3.blocks.1.attn.w_msa.qkv.weight, modality_encoders.sar.stages.3.blocks.1.attn.w_msa.qkv.bias, modality_encoders.sar.stages.3.blocks.1.attn.w_msa.proj.weight, modality_encoders.sar.stages.3.blocks.1.attn.w_msa.proj.bias, modality_encoders.sar.stages.3.blocks.1.norm2.weight, modality_encoders.sar.stages.3.blocks.1.norm2.bias, modality_encoders.sar.stages.3.blocks.1.ffn.layers.0.0.weight, modality_encoders.sar.stages.3.blocks.1.ffn.layers.0.0.bias, modality_encoders.sar.stages.3.blocks.1.ffn.layers.1.weight, modality_encoders.sar.stages.3.blocks.1.ffn.layers.1.bias, modality_encoders.sar.norm1.weight, modality_encoders.sar.norm1.bias, modality_encoders.sar.norm2.weight, modality_encoders.sar.norm2.bias, modality_encoders.sar.norm3.weight, modality_encoders.sar.norm3.bias, modality_encoders.topography.stem.0.conv.weight, modality_encoders.topography.stem.0.norm.weight, modality_encoders.topography.stem.0.norm.bias, modality_encoders.topography.stem.1.conv.weight, modality_encoders.topography.stem.1.norm.weight, modality_encoders.topography.stem.1.norm.bias, modality_encoders.topography.stage1.conv1.conv.weight, modality_encoders.topography.stage1.conv1.norm.weight, modality_encoders.topography.stage1.conv1.norm.bias, modality_encoders.topography.stage1.conv2.0.weight, modality_encoders.topography.stage1.conv2.1.weight, modality_encoders.topography.stage1.conv2.1.bias, modality_encoders.topography.stage1.downsample.0.weight, modality_encoders.topography.stage1.downsample.1.weight, modality_encoders.topography.stage1.downsample.1.bias, modality_encoders.topography.stage2.conv1.conv.weight, modality_encoders.topography.stage2.conv1.norm.weight, modality_encoders.topography.stage2.conv1.norm.bias, modality_encoders.topography.stage2.conv2.0.weight, modality_encoders.topography.stage2.conv2.1.weight, modality_encoders.topography.stage2.conv2.1.bias, modality_encoders.topography.stage2.downsample.0.weight, modality_encoders.topography.stage2.downsample.1.weight, modality_encoders.topography.stage2.downsample.1.bias, modality_encoders.topography.stage3.conv1.conv.weight, modality_encoders.topography.stage3.conv1.norm.weight, modality_encoders.topography.stage3.conv1.norm.bias, modality_encoders.topography.stage3.conv2.0.weight, modality_encoders.topography.stage3.conv2.1.weight, modality_encoders.topography.stage3.conv2.1.bias, modality_encoders.topography.stage3.downsample.0.weight, modality_encoders.topography.stage3.downsample.1.weight, modality_encoders.topography.stage3.downsample.1.bias, modality_encoders.change.stem.0.conv.weight, modality_encoders.change.stem.0.norm.weight, modality_encoders.change.stem.0.norm.bias, modality_encoders.change.stem.1.conv.weight, modality_encoders.change.stem.1.norm.weight, modality_encoders.change.stem.1.norm.bias, modality_encoders.change.stage1.conv1.conv.weight, modality_encoders.change.stage1.conv1.norm.weight, modality_encoders.change.stage1.conv1.norm.bias, modality_encoders.change.stage1.conv2.0.weight, modality_encoders.change.stage1.conv2.1.weight, modality_encoders.change.stage1.conv2.1.bias, modality_encoders.change.stage1.downsample.0.weight, modality_encoders.change.stage1.downsample.1.weight, modality_encoders.change.stage1.downsample.1.bias, modality_encoders.change.stage2.conv1.conv.weight, modality_encoders.change.stage2.conv1.norm.weight, modality_encoders.change.stage2.conv1.norm.bias, modality_encoders.change.stage2.conv2.0.weight, modality_encoders.change.stage2.conv2.1.weight, modality_encoders.change.stage2.conv2.1.bias, modality_encoders.change.stage2.downsample.0.weight, modality_encoders.change.stage2.downsample.1.weight, modality_encoders.change.stage2.downsample.1.bias, modality_encoders.change.stage3.conv1.conv.weight, modality_encoders.change.stage3.conv1.norm.weight, modality_encoders.change.stage3.conv1.norm.bias, modality_encoders.change.stage3.conv2.0.weight, modality_encoders.change.stage3.conv2.1.weight, modality_encoders.change.stage3.conv2.1.bias, modality_encoders.change.stage3.downsample.0.weight, modality_encoders.change.stage3.downsample.1.weight, modality_encoders.change.stage3.downsample.1.bias, fusion.projections.1.0.weight, fusion.projections.1.0.bias, fusion.projections.1.1.weight, fusion.projections.1.1.bias, fusion.projections.1.2.weight, fusion.projections.1.2.bias, fusion.projections.2.0.weight, fusion.projections.2.0.bias, fusion.projections.2.1.weight, fusion.projections.2.1.bias, fusion.projections.2.2.weight, fusion.projections.2.2.bias, fusion.projections.3.0.weight, fusion.projections.3.0.bias, fusion.projections.3.1.weight, fusion.projections.3.1.bias, fusion.projections.3.2.weight, fusion.projections.3.2.bias
+/root/autodl-tmp/PF-RPN/mmdet/apis/inference.py:108: UserWarning: palette does not exist, random is used by default. You can also set the palette to customize.
+  warnings.warn(
+
+/root/miniconda3/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/root/miniconda3/lib/python3.10/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+{
+  "config": "configs/m2-pf-rpn/m2_pf_rpn_cloud_full.py",
+  "checkpoint": "/root/autodl-tmp/work_dirs/w1/A0_rgb/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 1759,
+  "num_gt_boxes": 4227,
+  "AR": {
+    "AR@100": 0.09209132736179469,
+    "AR@300": 0.21090638650026372,
+    "AR@900": 0.3714394414324888
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.0667139815471966,
+    "recall@300": 0.17269931393423232,
+    "recall@900": 0.3409037142181216
+  },
+  "AR_coco_style": 0.10265928314442112,
+  "recall_by_size": {
+    "small": 0.29701765063907487,
+    "medium": 0.48031496062992124,
+    "large": 0.7307692307692307
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.07696900863799544,
+      0.10838327706495424
+    ],
+    "AR@300": [
+      0.19126739327951792,
+      0.23091991975044154
+    ],
+    "AR@900": [
+      0.3498748768714153,
+      0.3923449357551326
+    ]
+  },
+  "AR_by_event": {
+    "chimanimani": {
+      "AR@100": 0.07669555324774735,
+      "AR@300": 0.18625933520670362,
+      "AR@900": 0.3669496901609232
+    },
+    "indonesia": {
+      "AR@100": 0.08598421099020921,
+      "AR@300": 0.1980910490311173,
+      "AR@900": 0.34604198555758053
+    },
+    "china": {
+      "AR@100": 0.22576832151300236,
+      "AR@300": 0.4619385342789598,
+      "AR@900": 0.558628841607565
+    },
+    "usa": {
+      "AR@100": 0.11258503401360544,
+      "AR@300": 0.20901360544217687,
+      "AR@900": 0.342032967032967
+    }
+  },
+  "gt_by_event": {
+    "chimanimani": 2285,
+    "indonesia": 1714,
+    "china": 92,
+    "usa": 136
+  },
+  "size_counts": {
+    "small": 3286,
+    "medium": 889,
+    "large": 52
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0,
+    "recall@1.0FPPI": 0.0,
+    "recall@10.0FPPI": 0.009462976105985333
+  }
+}

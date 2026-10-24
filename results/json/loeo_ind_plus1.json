@@ -1,0 +1,60 @@
+{
+  "config": "/root/autodl-tmp/data_loeo_indonesia_long/config.py",
+  "checkpoint": "/root/autodl-tmp/work_dirs/w1/A4_loeo_ind_plus1/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 526,
+  "num_gt_boxes": 1714,
+  "AR": {
+    "AR@100": 0.5633128189419145,
+    "AR@300": 0.6730509245249012,
+    "AR@900": 0.771735776899319
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.45857642940490084,
+    "recall@300": 0.587514585764294,
+    "recall@900": 0.7088681446907817
+  },
+  "AR_coco_style": 0.3292056216780074,
+  "recall_by_size": {
+    "small": 0.6664195700518903,
+    "medium": 0.8686567164179104,
+    "large": 0.8333333333333334
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.5252308081440313,
+      0.5990119991574118
+    ],
+    "AR@300": [
+      0.6343293696684089,
+      0.7066184454098398
+    ],
+    "AR@900": [
+      0.7396941006318222,
+      0.801748387071276
+    ]
+  },
+  "AR_by_event": {
+    "indonesia": {
+      "AR@100": 0.5633128189419145,
+      "AR@300": 0.6730509245249012,
+      "AR@900": 0.771735776899319
+    }
+  },
+  "gt_by_event": {
+    "indonesia": 1714
+  },
+  "size_counts": {
+    "small": 1349,
+    "medium": 335,
+    "large": 30
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0005834305717619603,
+    "recall@1.0FPPI": 0.0005834305717619603,
+    "recall@10.0FPPI": 0.2467911318553092
+  }
+}

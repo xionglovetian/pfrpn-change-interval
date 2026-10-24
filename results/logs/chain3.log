@@ -1,0 +1,29 @@
+=== chain3 start Mon Oct 19 23:24:44 CST 2026 ===
+=== chain1 (pair arm) done Tue Oct 20 02:01:45 CST 2026 ===
+=== plus1 arrays: 8193 files ===
+train  rows= 6813 variant= 6813 deployed=    0
+val    rows= 1380 variant= 1380 deployed=    0
+test   rows= 1759 variant=  673 deployed= 1086
+change-channel stats from 111624192 train pixels: mean=[0.1397, -0.1165, 0.0547] std=[0.3505, 0.3315, 0.2553]
+wrote /root/autodl-tmp/data_plus1/config.py (data_root=/root/autodl-tmp/data_plus1)
+{
+  "train": {
+    "rows": 6813,
+    "variant": 6813,
+    "deployed": 0
+  },
+  "val": {
+    "rows": 1380,
+    "variant": 1380,
+    "deployed": 0
+  },
+  "test": {
+    "rows": 1759,
+    "variant": 673,
+    "deployed": 1086
+  }
+}
+root built: 0 Tue Oct 20 02:01:52 CST 2026
+plus1 train exit=0 Tue Oct 20 05:09:36 CST 2026
+A4_plus1  AR@100 0.4990  AR@300 0.6089  AR@900 0.7179  | small 0.621 medium 0.880 large 0.827
+=== chain3 done Tue Oct 20 05:11:26 CST 2026 ===

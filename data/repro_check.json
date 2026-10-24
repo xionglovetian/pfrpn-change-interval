@@ -1,0 +1,442 @@
+[
+ {
+  "tile": "chimanimani_1004",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 7, 'post': 8}"
+ },
+ {
+  "tile": "chimanimani_1005",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ },
+ {
+  "tile": "chimanimani_1006",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ },
+ {
+  "tile": "chimanimani_1029",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 8, 'post': 9}"
+ },
+ {
+  "tile": "chimanimani_1030",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 8, 'post': 9}"
+ },
+ {
+  "tile": "chimanimani_1033",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ },
+ {
+  "tile": "chimanimani_1043",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 7, 'post': 8}"
+ },
+ {
+  "tile": "chimanimani_1061",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 8, 'post': 9}"
+ },
+ {
+  "tile": "chimanimani_1072",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ },
+ {
+  "tile": "chimanimani_1088",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 7, 'post': 8}"
+ },
+ {
+  "tile": "indonesia_1103",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 4, 'post': 5},{'pre': 1, 'post':"
+ },
+ {
+  "tile": "indonesia_1108",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6},{'pre': 3, 'post':"
+ },
+ {
+  "tile": "indonesia_1152",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 1, 'post': 2},{'pre': 3, 'post':"
+ },
+ {
+  "tile": "indonesia_1155",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 9, 'post': 10}"
+ },
+ {
+  "tile": "indonesia_1156",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 3, 'post': 4},{'pre': 6, 'post':"
+ },
+ {
+  "tile": "indonesia_120",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 10, 'post': 11},{'pre': 6, 'post"
+ },
+ {
+  "tile": "indonesia_1204",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 9, 'post': 10}"
+ },
+ {
+  "tile": "indonesia_1205",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 3, 'post': 4},{'pre': 9, 'post':"
+ },
+ {
+  "tile": "indonesia_122",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 9, 'post': 10},{'pre': 7, 'post'"
+ },
+ {
+  "tile": "indonesia_1248",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 4, 'post': 5}"
+ },
+ {
+  "tile": "china_1000",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "china_1012",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 3, 'post': 4},{'pre': 2, 'post':"
+ },
+ {
+  "tile": "china_1013",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 3, 'post': 4}"
+ },
+ {
+  "tile": "china_1098",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 7, 'post': 8}"
+ },
+ {
+  "tile": "china_1187",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 2, 'post': 3}"
+ },
+ {
+  "tile": "china_502",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 7, 'post': 8}"
+ },
+ {
+  "tile": "china_552",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 11, 'post': 12},{'pre': 5, 'post"
+ },
+ {
+  "tile": "china_619",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "china_644",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 9, 'post': 10},{'pre': 4, 'post'"
+ },
+ {
+  "tile": "china_645",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 10, 'post': 11},{'pre': 4, 'post"
+ },
+ {
+  "tile": "usa_puertorico_1087",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "usa_puertorico_1089",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "usa_puertorico_1090",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ },
+ {
+  "tile": "usa_puertorico_1091",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ },
+ {
+  "tile": "usa_puertorico_1217",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "usa_puertorico_1220",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "usa_puertorico_1300",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "usa_puertorico_524",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 4, 'post': 5}"
+ },
+ {
+  "tile": "usa_puertorico_525",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 5, 'post': 6}"
+ },
+ {
+  "tile": "usa_puertorico_654",
+  "shape": [
+   128,
+   128,
+   3
+  ],
+  "max_abs_diff": 0.0,
+  "mask_match": true,
+  "ppd": "{'pre': 6, 'post': 7}"
+ }
+]

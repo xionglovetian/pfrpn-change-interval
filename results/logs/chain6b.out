@@ -1,0 +1,14 @@
+=== chain6b start Tue Oct 20 10:49:26 CST 2026 ===
+--- dump: anchor (A4 + long window) ---
+anchor exit=0 Tue Oct 20 10:51:14 CST 2026
+--- dump: plus1 arm ---
+plus1 exit=0 Tue Oct 20 10:53:02 CST 2026
+--- extract paired per-image AR ---
+anchor keys kept: ['ar_100', 'ar_300', 'ar_900', 'event_id', 'image_id', 'meta', 'num_gt', 'offsets', 'schema']
+plus1 keys kept: ['ar_100', 'ar_300', 'ar_900', 'event_id', 'image_id', 'meta', 'num_gt', 'offsets', 'schema']
+wrote paired_ar.json
+--- train change6 ---
+change6 train exit=0 Tue Oct 20 13:55:30 CST 2026
+A4_change6  AR@100 0.5789  AR@300 0.6867  AR@900 0.7634 | small 0.672 medium 0.889 large 0.942
+gate: AR@900 > 0.7394
+=== chain6b done Tue Oct 20 13:57:23 CST 2026 ===

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "Train on the Event, Deploy on the Baseline: Decoupling the Change Interval in Landslide Candidate Discovery"
+message: "If you use this code or these results, please cite the manuscript and this repository."
+type: software
+authors:
+  - family-names: Xiong
+    given-names: Luoyang
+    orcid: "https://orcid.org/0009-0001-3207-486X"
+  - family-names: Meng
+    given-names: Juan
+    orcid: "https://orcid.org/0000-0001-7494-2648"
+  - family-names: Deng
+    given-names: Nan
+    orcid: "https://orcid.org/0009-0003-4996-1013"
+  - family-names: Li
+    given-names: Wenchao
+    orcid: "https://orcid.org/0009-0006-6167-924X"
+  - family-names: Jin
+    given-names: Xu
+  - family-names: Dong
+    given-names: Xiaotian
+    orcid: "https://orcid.org/0009-0000-2886-1695"
+  - family-names: Zhang
+    given-names: Yuchai
+    orcid: "https://orcid.org/0009-0007-1987-3003"
+repository-code: "https://github.com/xionglovetian/pfrpn-change-interval"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-24"
+keywords:
+  - landslide detection
+  - change detection
+  - region proposal
+  - reproducibility
+  - Sentinel-1
+  - Sentinel-2

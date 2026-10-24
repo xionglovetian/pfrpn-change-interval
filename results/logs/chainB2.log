@@ -1,0 +1,147 @@
+=== B2 start Wed Oct 21 12:58:45 CST 2026: seeds 123 and 777 on the italy fold ===
+--- seed-42 chain finished Wed Oct 21 15:16:46 CST 2026 ---
+--- TRAIN seed 123 ---
+train seed 123 exit=0 Wed Oct 21 17:53:52 CST 2026
+--- EVAL seed 123 on the long root ---
+/root/autodl-tmp/PF-RPN/mmdet/apis/inference.py:108: UserWarning: palette does not exist, random is used by default. You can also set the palette to customize.
+  warnings.warn(
+Loads checkpoint by local backend from path: /root/autodl-tmp/work_dirs/w1/B_italy_plus1_s123/epoch_8.pth
+/root/miniconda3/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/root/miniconda3/lib/python3.10/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+{
+  "config": "/root/autodl-tmp/data_loeo_italy_long/config.py",
+  "checkpoint": "/root/autodl-tmp/work_dirs/w1/B_italy_plus1_s123/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 4236,
+  "num_gt_boxes": 35293,
+  "AR": {
+    "AR@100": 0.10027644162600931,
+    "AR@300": 0.15544780493139504,
+    "AR@900": 0.23667703410464574
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.10529000085002692,
+    "recall@300": 0.16227013855438754,
+    "recall@900": 0.23829087921117503
+  },
+  "AR_coco_style": 0.0756592702599595,
+  "recall_by_size": {
+    "small": 0.21421764250402048,
+    "medium": 0.7016806722689075,
+    "large": 0.9795918367346939
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.09458693760848656,
+      0.10610487110483484
+    ],
+    "AR@300": [
+      0.14835195407575558,
+      0.16254493391221514
+    ],
+    "AR@900": [
+      0.22868243134595356,
+      0.24456455746494318
+    ]
+  },
+  "AR_by_event": {
+    "italy": {
+      "AR@100": 0.10027644162600931,
+      "AR@300": 0.15544780493139504,
+      "AR@900": 0.23667703410464574
+    }
+  },
+  "gt_by_event": {
+    "italy": 35293
+  },
+  "size_counts": {
+    "small": 33578,
+    "medium": 1666,
+    "large": 49
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0,
+    "recall@1.0FPPI": 0.0,
+    "recall@10.0FPPI": 0.04890488198792962
+  }
+}
+eval seed 123 exit=0 Wed Oct 21 17:57:51 CST 2026
+seed 123  AR@100 0.1003  AR@300 0.1554  AR@900 0.2367
+--- TRAIN seed 777 ---
+train seed 777 exit=0 Wed Oct 21 20:31:02 CST 2026
+--- EVAL seed 777 on the long root ---
+/root/autodl-tmp/PF-RPN/mmdet/apis/inference.py:108: UserWarning: palette does not exist, random is used by default. You can also set the palette to customize.
+  warnings.warn(
+Loads checkpoint by local backend from path: /root/autodl-tmp/work_dirs/w1/B_italy_plus1_s777/epoch_8.pth
+/root/miniconda3/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/root/miniconda3/lib/python3.10/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+{
+  "config": "/root/autodl-tmp/data_loeo_italy_long/config.py",
+  "checkpoint": "/root/autodl-tmp/work_dirs/w1/B_italy_plus1_s777/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 4236,
+  "num_gt_boxes": 35293,
+  "AR": {
+    "AR@100": 0.08912406800740173,
+    "AR@300": 0.13852414448812267,
+    "AR@900": 0.21718175559545974
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.096223047063157,
+    "recall@300": 0.14869804210466664,
+    "recall@900": 0.22182869124188934
+  },
+  "AR_coco_style": 0.06739696058521444,
+  "recall_by_size": {
+    "small": 0.19804633986538805,
+    "medium": 0.6782713085234093,
+    "large": 1.0
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.08329344516175503,
+      0.09495085051999097
+    ],
+    "AR@300": [
+      0.13187569593929802,
+      0.14538538568168533
+    ],
+    "AR@900": [
+      0.20921224203969022,
+      0.22546345567093387
+    ]
+  },
+  "AR_by_event": {
+    "italy": {
+      "AR@100": 0.08912406800740173,
+      "AR@300": 0.13852414448812267,
+      "AR@900": 0.21718175559545974
+    }
+  },
+  "gt_by_event": {
+    "italy": 35293
+  },
+  "size_counts": {
+    "small": 33578,
+    "medium": 1666,
+    "large": 49
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0,
+    "recall@1.0FPPI": 0.0,
+    "recall@10.0FPPI": 0.04394639163573513
+  }
+}
+eval seed 777 exit=0 Wed Oct 21 20:34:59 CST 2026
+seed 777  AR@100 0.0891  AR@300 0.1385  AR@900 0.2172
+=== B2 done Wed Oct 21 20:34:59 CST 2026 ===

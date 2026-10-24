@@ -1,0 +1,97 @@
+# M3 EG-RR (Evidence-Grounded Risk and Reporting) configuration.
+# Authority: E:\PF-RPN\RESEARCH_ROADMAP.md sections 7.1-7.8.
+
+schema:
+  m3_input: "m3_input.v1"
+  evidence_graph: "evidence_graph.v1"
+  report: "report.v1"
+
+# ---------------------------------------------------------------------------
+# Evidence normalisation. Scores are landslide-favourability in [0, 1].
+# mode: linear | ramp | inverse_ramp | log_linear | passthrough
+# ---------------------------------------------------------------------------
+evidence:
+  specs:
+    geometry:
+      bbox_area_px:     {mode: log_linear, low: 400.0, high: 400000.0, direction: increase}
+      bbox_aspect_ratio: {mode: ramp, low: 1.0, high: 6.0, direction: increase, weight_scale: 0.6}
+      boundary_quality:  {mode: linear, low: 0.0, high: 1.0, direction: increase}
+    terrain:
+      slope_mean_deg:   {mode: ramp, low: 10.0, high: 40.0, direction: increase}
+      slope_max_deg:    {mode: ramp, low: 15.0, high: 50.0, direction: increase, weight_scale: 0.7}
+      curvature_mean:   {mode: ramp, low: -0.5, high: 0.5, direction: increase, weight_scale: 0.5}
+      elevation_mean_m: {mode: linear, low: 200.0, high: 2500.0, direction: increase, weight_scale: 0.4}
+    spectral:
+      ndvi_drop:        {mode: ramp, low: 0.0, high: 0.35, direction: increase}
+      ndwi_change:      {mode: ramp, low: -0.2, high: 0.3, direction: increase, weight_scale: 0.7}
+      nbr_drop:         {mode: ramp, low: 0.0, high: 0.40, direction: increase}
+    sar:
+      vv_change_db:     {mode: ramp, low: 0.0, high: 6.0, direction: increase}
+      vh_change_db:     {mode: ramp, low: 0.0, high: 6.0, direction: increase}
+      coherence_drop:   {mode: ramp, low: 0.0, high: 0.5, direction: increase}
+    meteorology:
+      rainfall_7d_mm:   {mode: ramp, low: 0.0, high: 350.0, direction: increase}
+    environment:
+      fault_distance_m: {mode: inverse_ramp, low: 0.0, high: 5000.0, direction: decrease, weight_scale: 0.8}
+      river_distance_m: {mode: inverse_ramp, low: 0.0, high: 2000.0, direction: decrease}
+      road_distance_m:  {mode: inverse_ramp, low: 0.0, high: 1000.0, direction: decrease, weight_scale: 0.8}
+    historical:
+      historical_landslide_density: {mode: ramp, low: 0.0, high: 1.0, direction: increase}
+      distance_to_inventory_m:      {mode: inverse_ramp, low: 0.0, high: 3000.0, direction: decrease}
+    model:
+      objectness:           {mode: linear, low: 0.0, high: 1.0, direction: increase}
+      calibrated_probability: {mode: linear, low: 0.0, high: 1.0, direction: increase}
+      verification_uncertainty: {mode: context}   # reliability signal, not a hazard driver
+
+# ---------------------------------------------------------------------------
+# Deterministic hazard / susceptibility model (rule-based for v1).
+# ---------------------------------------------------------------------------
+hazard_model:
+  kind: rule
+  base_rate: 0.15
+  missing_evidence_weight: 0.25
+  groups:
+    terrain: 1.35
+    spectral: 1.10
+    sar: 0.95
+    meteorology: 1.15
+    environment: 0.85
+    geometry: 0.70
+    historical: 1.00
+    model: 1.25
+  interactions:
+    - name: rainfall_on_slope
+      evidence: [rainfall_7d_mm, slope_mean_deg]
+      weight: 0.60
+    - name: vegetation_loss_on_slope
+      evidence: [ndvi_drop, slope_mean_deg]
+      weight: 0.45
+  level_thresholds: [0.20, 0.40, 0.60, 0.80]   # very_low/low/moderate/high/very_high
+
+uncertainty:
+  min_completeness: 0.55
+  review_probability_band: [0.35, 0.65]
+  levels:
+    high_total: 0.25
+    medium_total: 0.12
+
+report:
+  language: zh
+  terminology: hazard
+  require_evidence_citation: true
+  forbid_new_numbers: true
+  max_claims: 12
+  retrieval_top_k: 4
+  min_evidence_coverage: 0.5
+  hard_negative_threshold: 0.02
+  always_review_high_hazard: true
+  require_exposure_for_risk: true
+
+llm:
+  # v1 default is the deterministic template so tests run offline.
+  backend: template          # template | openai_compatible | custom
+  model: null
+  prompt_version: "m3-egrr-v1"
+  max_retries: 2
+  json_repair: true
+  api_base: null

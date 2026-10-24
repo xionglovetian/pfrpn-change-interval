@@ -1,0 +1,7 @@
+=== chain3 start Mon Oct 19 23:24:44 CST 2026 ===
+=== chain1 (pair arm) done Tue Oct 20 02:01:45 CST 2026 ===
+=== plus1 arrays: 8193 files ===
+root built: 0 Tue Oct 20 02:01:52 CST 2026
+plus1 train exit=0 Tue Oct 20 05:09:36 CST 2026
+A4_plus1  AR@100 0.4990  AR@300 0.6089  AR@900 0.7179  | small 0.621 medium 0.880 large 0.827
+=== chain3 done Tue Oct 20 05:11:26 CST 2026 ===

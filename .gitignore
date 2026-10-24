@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.pyc
+*.pth
+*.pt
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+work_dirs/
+data/Sen12Landslides/
+data/tiles/
+*.log.tmp

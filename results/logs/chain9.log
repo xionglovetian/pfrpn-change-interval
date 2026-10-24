@@ -1,0 +1,9 @@
+=== chain9 start Tue Oct 20 23:13:10 CST 2026 ===
+--- A. channel-count control: [long|long], 6ch ---
+control train exit=0 Wed Oct 21 02:17:36 CST 2026
+CONTROL [long|long]  AR@100 0.4384 AR@300 0.5857 AR@900 0.7041 | CI@900 [0.6822, 0.7246]
+reference: anchor 0.4652/0.5886/0.7094 | fusion 0.5789/0.6867/0.7634
+--- B. fusion arm, seed 123 ---
+fusion seed123 exit=0 Wed Oct 21 05:23:48 CST 2026
+FUSION seed123  AR@100 0.5607 AR@300 0.6783 AR@900 0.7532
+=== chain9 done Wed Oct 21 05:25:36 CST 2026 ===

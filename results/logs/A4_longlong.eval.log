@@ -1,0 +1,85 @@
+/root/autodl-tmp/PF-RPN/mmdet/apis/inference.py:108: UserWarning: palette does not exist, random is used by default. You can also set the palette to customize.
+  warnings.warn(
+Loads checkpoint by local backend from path: /root/autodl-tmp/work_dirs/w1/A4_longlong/epoch_8.pth
+/root/miniconda3/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/root/miniconda3/lib/python3.10/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+{
+  "config": "/root/autodl-tmp/data_longlong/config.py",
+  "checkpoint": "/root/autodl-tmp/work_dirs/w1/A4_longlong/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 1759,
+  "num_gt_boxes": 4227,
+  "AR": {
+    "AR@100": 0.4384241007105759,
+    "AR@300": 0.5857025978872771,
+    "AR@900": 0.7041087719907441
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.3647977288857346,
+    "recall@300": 0.5216465578424414,
+    "recall@900": 0.6631180506269222
+  },
+  "AR_coco_style": 0.2830289617914172,
+  "recall_by_size": {
+    "small": 0.6080340839926963,
+    "medium": 0.8560179977502812,
+    "large": 0.8461538461538461
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.4130945739393626,
+      0.46416761593699235
+    ],
+    "AR@300": [
+      0.5620149365849212,
+      0.609900126497882
+    ],
+    "AR@900": [
+      0.6822077349279992,
+      0.7246160132623061
+    ]
+  },
+  "AR_by_event": {
+    "chimanimani": {
+      "AR@100": 0.372227498985811,
+      "AR@300": 0.5390505836264013,
+      "AR@900": 0.7008930229121372
+    },
+    "indonesia": {
+      "AR@100": 0.530929330681031,
+      "AR@300": 0.6513014529679827,
+      "AR@900": 0.7238448682637328
+    },
+    "china": {
+      "AR@100": 0.5245862884160757,
+      "AR@300": 0.7353427895981087,
+      "AR@900": 0.8002364066193852
+    },
+    "usa": {
+      "AR@100": 0.2735805860805861,
+      "AR@300": 0.3166077969649398,
+      "AR@900": 0.40404456654456655
+    }
+  },
+  "gt_by_event": {
+    "chimanimani": 2285,
+    "indonesia": 1714,
+    "china": 92,
+    "usa": 136
+  },
+  "size_counts": {
+    "small": 3286,
+    "medium": 889,
+    "large": 52
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0,
+    "recall@1.0FPPI": 0.0,
+    "recall@10.0FPPI": 0.1698604211024367
+  }
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "sample_id": "event_001_tile_000123",
+    "event_id": "event_001",
+    "image_id": "tile_000123",
+    "shape": [
+      64,
+      64
+    ],
+    "modality_mask": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "modalities": {
+      "optical_pre": "optical_pre.npy",
+      "sar_pre": "sar_pre.npy",
+      "sar_post": "sar_post.npy",
+      "topography": "topography.npy",
+      "change": "change.npy"
+    },
+    "labels": {
+      "annotations": [
+        {
+          "bbox_xyxy": [
+            10.0,
+            10.0,
+            32.0,
+            32.0
+          ],
+          "category_id": 1
+        }
+      ],
+      "negatives": [
+        {
+          "type": "bare_soil",
+          "bbox_xyxy": [
+            34.0,
+            34.0,
+            55.0,
+            55.0
+          ]
+        }
+      ]
+    }
+  }
+]

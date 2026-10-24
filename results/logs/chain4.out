@@ -1,0 +1,8 @@
+=== chain4 (P0) start Tue Oct 20 05:13:03 CST 2026 ===
+--- TRAIN A0_rgb Tue Oct 20 05:13:03 CST 2026 ---
+train exit=0 Tue Oct 20 07:41:47 CST 2026
+A0_rgb         AR@100 0.0921 AR@300 0.2109 AR@900 0.3714
+--- TRAIN A9_no_change Tue Oct 20 07:43:35 CST 2026 ---
+train exit=0 Tue Oct 20 10:44:19 CST 2026
+A9_no_change   AR@100 0.1113 AR@300 0.2667 AR@900 0.4337
+=== P0 DONE Tue Oct 20 10:46:10 CST 2026  (refs: A0 0.3533, A9 0.4799 +/-0.025) ===

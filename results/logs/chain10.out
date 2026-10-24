@@ -1,0 +1,10 @@
+=== chain10 (cross-protocol: LOEO indonesia) start Wed Oct 21 05:26:08 CST 2026 ===
+--- dash the fold anchor with a per-image dump ---
+anchor dump exit=0
+--- TRAIN: +/-1 window on the fold's train set ---
+train exit=0 Wed Oct 21 09:36:27 CST 2026
+--- EVAL: deployed on the long root (same as the anchor) ---
+ANCHOR (long->long)          AR@100 0.6168 AR@300 0.7154 AR@900 0.7891
+PLUS1 train -> long deploy   AR@100 0.5633 AR@300 0.6731 AR@900 0.7717
+wrote paired_ar_loeo.json
+=== chain10 done Wed Oct 21 09:37:09 CST 2026 ===

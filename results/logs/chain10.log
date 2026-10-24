@@ -1,0 +1,144 @@
+=== chain10 (cross-protocol: LOEO indonesia) start Wed Oct 21 05:26:08 CST 2026 ===
+--- dash the fold anchor with a per-image dump ---
+/root/autodl-tmp/PF-RPN/mmdet/apis/inference.py:108: UserWarning: palette does not exist, random is used by default. You can also set the palette to customize.
+  warnings.warn(
+Loads checkpoint by local backend from path: work_dirs/m2_pf_rpn/loeo/indonesia/A4_add_change/epoch_8.pth
+/root/miniconda3/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/root/miniconda3/lib/python3.10/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+{
+  "config": "/root/autodl-tmp/data_loeo_indonesia_long/config.py",
+  "checkpoint": "work_dirs/m2_pf_rpn/loeo/indonesia/A4_add_change/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 526,
+  "num_gt_boxes": 1714,
+  "AR": {
+    "AR@100": 0.6168463595606074,
+    "AR@300": 0.7153974824675774,
+    "AR@900": 0.7890597286030142
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.49066511085180864,
+    "recall@300": 0.6131855309218203,
+    "recall@900": 0.7187864644107351
+  },
+  "AR_coco_style": 0.32629501996901605,
+  "recall_by_size": {
+    "small": 0.6708673091178651,
+    "medium": 0.8895522388059701,
+    "large": 0.9666666666666667
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.5805143434484146,
+      0.650242990854292
+    ],
+    "AR@300": [
+      0.6818998907382549,
+      0.747086405927263
+    ],
+    "AR@900": [
+      0.7607134236268335,
+      0.8140780542536488
+    ]
+  },
+  "AR_by_event": {
+    "indonesia": {
+      "AR@100": 0.6168463595606074,
+      "AR@300": 0.7153974824675774,
+      "AR@900": 0.7890597286030142
+    }
+  },
+  "gt_by_event": {
+    "indonesia": 1714
+  },
+  "size_counts": {
+    "small": 1349,
+    "medium": 335,
+    "large": 30
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0,
+    "recall@1.0FPPI": 0.0,
+    "recall@10.0FPPI": 0.2701283547257876
+  }
+}
+anchor dump exit=0
+--- TRAIN: +/-1 window on the fold's train set ---
+train exit=0 Wed Oct 21 09:36:27 CST 2026
+--- EVAL: deployed on the long root (same as the anchor) ---
+/root/autodl-tmp/PF-RPN/mmdet/apis/inference.py:108: UserWarning: palette does not exist, random is used by default. You can also set the palette to customize.
+  warnings.warn(
+Loads checkpoint by local backend from path: /root/autodl-tmp/work_dirs/w1/A4_loeo_ind_plus1/epoch_8.pth
+/root/miniconda3/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/root/miniconda3/lib/python3.10/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+{
+  "config": "/root/autodl-tmp/data_loeo_indonesia_long/config.py",
+  "checkpoint": "/root/autodl-tmp/work_dirs/w1/A4_loeo_ind_plus1/epoch_8.pth",
+  "split": "test",
+  "drop_modalities": [],
+  "shuffle_modalities": [],
+  "zero_channels": [],
+  "num_images": 526,
+  "num_gt_boxes": 1714,
+  "AR": {
+    "AR@100": 0.5633128189419145,
+    "AR@300": 0.6730509245249012,
+    "AR@900": 0.771735776899319
+  },
+  "micro_recall_at_iou": {
+    "recall@100": 0.45857642940490084,
+    "recall@300": 0.587514585764294,
+    "recall@900": 0.7088681446907817
+  },
+  "AR_coco_style": 0.3292056216780074,
+  "recall_by_size": {
+    "small": 0.6664195700518903,
+    "medium": 0.8686567164179104,
+    "large": 0.8333333333333334
+  },
+  "AR_ci95": {
+    "AR@100": [
+      0.5252308081440313,
+      0.5990119991574118
+    ],
+    "AR@300": [
+      0.6343293696684089,
+      0.7066184454098398
+    ],
+    "AR@900": [
+      0.7396941006318222,
+      0.801748387071276
+    ]
+  },
+  "AR_by_event": {
+    "indonesia": {
+      "AR@100": 0.5633128189419145,
+      "AR@300": 0.6730509245249012,
+      "AR@900": 0.771735776899319
+    }
+  },
+  "gt_by_event": {
+    "indonesia": 1714
+  },
+  "size_counts": {
+    "small": 1349,
+    "medium": 335,
+    "large": 30
+  },
+  "recall_at_fppi": {
+    "recall@0.1FPPI": 0.0005834305717619603,
+    "recall@1.0FPPI": 0.0005834305717619603,
+    "recall@10.0FPPI": 0.2467911318553092
+  }
+}
+ANCHOR (long->long)          AR@100 0.6168 AR@300 0.7154 AR@900 0.7891
+PLUS1 train -> long deploy   AR@100 0.5633 AR@300 0.6731 AR@900 0.7717
+wrote paired_ar_loeo.json
+=== chain10 done Wed Oct 21 09:37:09 CST 2026 ===

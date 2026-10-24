@@ -1,0 +1,101 @@
+{
+ "split": "event-level test split, 1759 images / 4227 GT; 900 candidates per image; IoU 0.5",
+ "metric": "AR@900",
+ "note": "v6 revision + channel-count control. Adds the three correct-interval arms, the duplicated-stack control and the 6-channel complementary-stream arm. Bars are sorted by value; the dashed line marks the archived clean anchor 0.7059.",
+ "anchor": 0.7058899,
+ "bars": [
+  {
+   "name": "Long + event window, 6 channels (2 seeds)",
+   "ar900": 0.7583,
+   "err": 0.0072,
+   "family": "complementary stream",
+   "source": "A4_change6 s42 0.7634 / s123 0.7532; mean 0.7583, s.d. 0.0072 (seed dispersion)"
+  },
+  {
+   "name": "Trained on the correct interval (3 seeds)",
+   "ar900": 0.7474,
+   "err": 0.0105,
+   "family": "correct interval (retrained)",
+   "source": "three seed replicates, AR@900 mean and s.d., RTX 3080 Ti"
+  },
+  {
+   "name": "A4 zero change ch2",
+   "ar900": 0.7090419,
+   "family": "change channels",
+   "source": "A4_zero_change_2_test.json"
+  },
+  {
+   "name": "A4 clean (true change)",
+   "ar900": 0.7058899,
+   "family": "reference",
+   "source": "c2_mispaired.json -> main_split_test_AR900.A4_clean_rerun"
+  },
+  {
+   "name": "6 change channels, long + long (control)",
+   "ar900": 0.7041,
+   "err": 0.0,
+   "family": "channel count control",
+   "source": "A4_longlong/test_metrics.json; 95% CI [0.6822, 0.7246]; same machine, anchor 0.7094"
+  },
+  {
+   "name": "A4 permute topography (control)",
+   "ar900": 0.6991,
+   "family": "permutation control",
+   "source": "e3_permute_topography.json (E3-c)"
+  },
+  {
+   "name": "A4 permute SAR (control)",
+   "ar900": 0.6911,
+   "family": "permutation control",
+   "source": "e3_permute_sar.json (E3-b)"
+  },
+  {
+   "name": "Correct interval given to the frozen model",
+   "ar900": 0.6222,
+   "family": "correct interval (frozen)",
+   "source": "frozen_plus1_3080ti.json; 95% CI [0.5991, 0.6456]"
+  },
+  {
+   "name": "A4 zero change ch0",
+   "ar900": 0.6087226,
+   "family": "change channels",
+   "source": "A4_zero_change_0_test.json"
+  },
+  {
+   "name": "Single-pair interval given to the frozen model",
+   "ar900": 0.5447,
+   "family": "correct interval (frozen)",
+   "source": "frozen_pair_3080ti.json; 95% CI [0.5197, 0.5702]"
+  },
+  {
+   "name": "A3 retrained without change",
+   "ar900": 0.4642,
+   "family": "no change",
+   "source": "A3_nochange_3seed (3 seeds)"
+  },
+  {
+   "name": "A4 wrong interval, 0.48 T span",
+   "ar900": 0.4632,
+   "family": "outside event window",
+   "source": "E4"
+  },
+  {
+   "name": "A4 permute change (within tile)",
+   "ar900": 0.3866,
+   "family": "permutation",
+   "source": "e3_permute_change.json (E3-a)"
+  },
+  {
+   "name": "A4 mispaired, earliest two acquisitions",
+   "ar900": 0.3534633,
+   "family": "outside event window",
+   "source": "c2_mispaired.json -> main_split_test_AR900.A4_mispaired_change"
+  },
+  {
+   "name": "A0 optical only",
+   "ar900": 0.3533,
+   "family": "no change",
+   "source": "A0_rgb_archived"
+  }
+ ]
+}
