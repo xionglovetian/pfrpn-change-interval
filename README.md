@@ -1,4 +1,4 @@
-﻿# pfrpn-change-interval
+# pfrpn-change-interval
 
 Reproduction package for the manuscript
 
@@ -21,7 +21,7 @@ paper and its supplementary material. It does **not** contain model checkpoints 
 | Committing the interval during training is free at deployment | +5.4 % relative AR@900 (0.7094 → 0.7474), three seeds | `results/json/paired_ar.json`, `results/per_image/*.npz` |
 | The gain does not replicate across protocols | Indonesia LOEO −0.017, Italy LOEO −0.067 (pre-registered KILL) | `results/json/loeo_ind_*.json`, `B_italy_*.json`, `B_italy_decision.json` |
 | A training-free criterion forecasts which route wins | Pearson 0.915, leave-one-fold-out 0.856, 10/10 folds correct sign | `data/features_15f.jsonl`, `scripts/f1_calendar_rule.py`, `results/json/paired_ar_loeo.json` |
-| The paradigm gap is bounded once budgets are equalised | 1.99× (four-event split), 3.11× (ten folds) | `results/json/paired_ar.json`, `results/run_configs/*/test_metrics.json` |
+| The paradigm gap is bounded once budgets are equalised | 2.13× (four-event split, image-averaged AR@900 at a matched 900-candidate budget), 3.11× (ten folds) | `results/run_configs/*/test_metrics.json` (PF-RPN, macro *and* micro); the external-arm scores (FT-YOLO-World 0.3321 AR@900 / 0.2900 ground-truth-weighted, Grounding DINO 0.1828 / 0.159451) are reported in Section V-A of the manuscript |
 
 ---
 
@@ -40,7 +40,7 @@ results/
   per_image/           per-image score arrays (.npz, 14 files) - needed to recompute paired CIs
   logs/                training and evaluation logs, plus the exact chain scripts that produced each arm
   run_configs/         per-run config.py + test_metrics.json
-scripts/              data builders, calendar rule, paired bootstrap, fold diagnostics
+scripts/              data builders, calendar rule, criterion (LOFO/baselines), paired bootstrap, fold diagnostics
 figures/              paper figures (PNG) and the plotting scripts that generate them
 docs/                 compiled manuscript and supplementary material (PDF)
 CHECKSUMS.sha256      SHA256 of every tracked file
@@ -74,15 +74,26 @@ python verify_checksums.py            # every file matches CHECKSUMS.sha256
 ### 4.2 Paired confidence intervals (minutes, no GPU)
 
 `results/per_image/*.npz` hold the per-image scores of the anchor and of every intervention arm.
-`scripts/paired_bootstrap.py` recomputes the ΔAR confidence intervals reported in the paper:
+`scripts/paired_bootstrap.py` recomputes the paired ΔAR confidence intervals and the sign test:
 
 ```bash
 python scripts/paired_bootstrap.py --json results/json/paired_ar.json --reps 20000
 ```
 
-The printed values reproduce Table IV and the interval section of the paper.
+Two estimators are reported in the paper and both are reproducible here: the three-seed average over the
+1,759 test images (Table IV) and the paired bootstrap over the 673 images that carry ground truth (§V-D).
 
-### 4.3 Rebuilding a change-interval arm (needs the dataset)
+### 4.3 The training-free criterion (minutes, no GPU)
+
+```bash
+python scripts/f1_calendar_rule.py  --dates data/dates.jsonl --manifests data/_manifests_base.tgz   # 97.9 % / 100.0 %
+python scripts/criterion_lofo.py    --features data/features_15f.jsonl                             # r = 0.915, LOO 0.856, 10/10 folds
+python scripts/criterion_baselines.py --features data/features_15f.jsonl                           # pointwise and zero-shot baselines
+```
+
+`scripts/f1_baselines.py` holds the frame-selector baselines that establish the calendar rule's headroom.
+
+### 4.4 Rebuilding a change-interval arm (needs the dataset)
 
 ```bash
 # 1) rebuild the arm definition from the calendar
@@ -95,7 +106,7 @@ python -m tools.eval_export --config data/data_plus1/config.py --checkpoint <ckp
 
 The exact commands that produced the published runs are preserved verbatim in `results/logs/chain*.sh`.
 
-### 4.4 The calendar rule
+### 4.5 The calendar rule (long form)
 
 ```bash
 python scripts/f1_calendar_rule.py --dates data/dates.jsonl --manifests data/_manifests_base.tgz
@@ -122,6 +133,13 @@ per-image scores.
 * The interval effect is **scoped**: +5.4 % relative holds on the event-level protocol with an anchor of 0.7094.
   The two cross-protocol folds (Indonesia LOEO, Italy LOEO) did not replicate the gain and are reported as such,
   including the pre-registered kill criterion (`results/json/B_italy_decision.json`).
+* The cross-paradigm ratios are quoted on **image-averaged** AR@900 with every arm at a matched 900-candidate budget.
+  The ground-truth-weighted (micro) counterparts are recorded in the manuscript tables; mixing the two conventions is
+  what produced the earlier 1.99× figure (0.6619 micro ÷ 0.3321 macro), which has been withdrawn in favour of 2.13×
+  (0.7059 macro ÷ 0.3321 macro) — the same convention as the 3.11× ten-fold figure.
+* The per-image export JSONs of the external detector arms (Grounding DINO, YOLO-World fine-tuned and zero-shot,
+  closed-set YOLOv8s) are **not** part of this package, so those arms can be checked against the manuscript's Table I/II
+  but not recomputed from this repository alone. Every PF-RPN number, by contrast, recomputes from the shipped artefacts.
 * The verification stage described in Section V-E is a **comparison instrument**, not a deployable quality model:
   the paradigm-neutral scorer reaches 3.31 % recall at ten candidates against 22.65 % for a model's own confidence.
 * `results/json/tmp_plus1long.json` is an intermediate diagnostic kept for transparency; it is not used in the paper.
