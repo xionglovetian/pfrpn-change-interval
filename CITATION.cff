@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Train on the Event, Deploy on the Baseline: Decoupling the Change Interval in Landslide Candidate Discovery"
+title: "Train on the Event, Deploy on the Baseline: The Change Interval Belongs to the Task Specification, not the Model"
 message: "If you use this code or these results, please cite the manuscript and this repository."
 type: software
 authors:

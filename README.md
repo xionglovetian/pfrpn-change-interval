@@ -2,7 +2,7 @@
 
 Reproduction package for the manuscript
 
-> **Train on the Event, Deploy on the Baseline: Decoupling the Change Interval in Landslide Candidate Discovery**
+> **Train on the Event, Deploy on the Baseline: The Change Interval Belongs to the Task Specification, not the Model**
 > Luoyang Xiong, Juan Meng\*, Nan Deng, Wenchao Li, Xu Jin, Xiaotian Dong, Yuchai Zhang
 > University of Emergency Management, Sanhe 065201, Hebei, China  ·  \*corresponding author
 
