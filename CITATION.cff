@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Train on the Event, Deploy on the Baseline: The Change Interval Belongs to the Task Specification, not the Model"
+title: "Reproducibility package: class-agnostic candidate generation and calendar-derived event windows for rapid landslide mapping"
 message: "If you use this code or these results, please cite the manuscript and this repository."
 type: software
 authors:
@@ -26,12 +26,14 @@ authors:
     orcid: "https://orcid.org/0009-0007-1987-3003"
 repository-code: "https://github.com/xionglovetian/pfrpn-change-interval"
 license: MIT
-version: "1.0.0"
-date-released: "2026-10-24"
+version: "1.1.0"
+date-released: "2026-10-28"
 keywords:
-  - landslide detection
+  - landslide inventory
+  - rapid post-event mapping
   - change detection
-  - region proposal
-  - reproducibility
+  - candidate generation
+  - event-disjoint evaluation
   - Sentinel-1
   - Sentinel-2
+  - reproducibility

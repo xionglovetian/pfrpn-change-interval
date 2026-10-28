@@ -1,0 +1,7 @@
+block,variant,label,pf,gd,yw,ratio
+family,1,Label-free (change magnitude),0.0185,0.0166,0.0137,1.11
+family,2,Handcrafted 11-D + pointwise LR,0.0237,0.0225,0.0182,1.05
+family,3,CLIP + pointwise LR,0.0289,0.0161,0.0125,1.80
+diagnostic,4,CLIP + pointwise LR (arm-balanced),0.0310,0.0128,0.0088,2.42
+diagnostic,5,CLIP + pointwise LR (LOAO: arm held out),0.0331,0.0130,0.0090,2.55
+diagnostic,6,CLIP + listwise (held-out selection),0.0331,0.0173,0.0166,1.92

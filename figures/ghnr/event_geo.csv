@@ -1,0 +1,12 @@
+event,location_label,lon,lat,location_status,split,country,trigger
+italy,"Emilia-Romagna, Italy",11.85,44.35,verified,train,Italy,rainfall / flood (May 2023)
+chimanimani,"Chimanimani, Zimbabwe",32.87,-19.8,verified,test,Zimbabwe,Cyclone Idai (Mar 2019)
+hiroshima,"Hiroshima, Japan",132.8,34.6,verified,train,Japan,heavy rainfall (Jun 2018)
+hokkaido,"Iburi, Hokkaido, Japan",141.95,42.65,verified,val,Japan,Mj 6.7 earthquake (Sep 2018)
+itogon,"Itogon, Philippines",120.68,16.42,verified,train,Philippines,Typhoon Mangkhut (Sep 2018)
+china,China (multi-event),105.0,35.0,country,test,China,multiple
+indonesia,Indonesia (multi-event),118.0,-2.5,country,test,Indonesia,multiple
+kyrgyzstan1,Kyrgyzstan (multi-event),74.6,41.6,country,train,Kyrgyzstan,multiple
+kyrgyzstan2,Kyrgyzstan (multi-event),74.6,40.1,country,train,Kyrgyzstan,multiple
+newzealand,New Zealand (multi-event),172.8,-41.5,country,val,New Zealand,multiple
+usa,"Puerto Rico, USA",-66.7,18.0,verified,test,USA (Puerto Rico),earthquake sequence (Jan 2020)

@@ -1,0 +1,32 @@
+{
+  "title": "Reproducibility package: class-agnostic candidate generation and calendar-derived event windows for rapid landslide mapping",
+  "upload_type": "software",
+  "version": "1.1.0",
+  "publication_date": "2026-10-28",
+  "access_right": "open",
+  "license": "MIT",
+  "description": "<p>Code, data definitions, per-image scores and result artefacts behind the manuscript <em>Class-agnostic candidate generation and calendar-derived event windows for rapid landslide mapping</em>, released on top of version 1.0.0 of the same repository (which documented the earlier journal version).</p><p><strong>What the archive contains.</strong> <code>scripts/</code> implements the Event-Bracketing Rule (<code>f1_calendar_rule.py</code>), the discovery baselines, the training-free separability criterion (LOFO and baseline variants) and the paired bootstrap. <code>data/</code> holds the per-tile acquisition calendar (<code>dates.jsonl</code>), the per-tile separability features (<code>features_15f.jsonl</code>) and the derived-data definitions for the eight arm configurations. <code>results/json/</code> holds every metric reported in the paper, <code>results/per_image/</code> the per-image score arrays from which the paired confidence intervals are recomputed, <code>results/logs/</code> the training and evaluation logs with the chain scripts, and <code>results/run_configs/</code> the per-run configuration and test metrics. <code>figures/</code> holds the published figures with their plotting scripts, and <code>figures/ghnr/</code> the builders for the figure set used in this version. <code>CHECKSUMS.sha256</code> together with <code>verify_checksums.py</code> allows every file to be verified before use.</p><p>Model checkpoints (33 GB) and the Sen12Landslides imagery (57 GB) are not included; both are described in the README and can be regenerated or downloaded (Hoehn et al. 2025, https://huggingface.co/datasets/paulhoehn/Sen12Landslides).</p>",
+  "creators": [
+    {"name": "Xiong, Luoyang", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0009-0001-3207-486X"},
+    {"name": "Meng, Juan", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0000-0001-7494-2648"},
+    {"name": "Deng, Nan", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0009-0003-4996-1013"},
+    {"name": "Li, Wenchao", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0009-0006-6167-924X"},
+    {"name": "Jin, Xu", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0009-0005-2323-3610"},
+    {"name": "Dong, Xiaotian", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0009-0000-2886-1695"},
+    {"name": "Zhang, Yuchai", "affiliation": "University of Emergency Management, Sanhe, Hebei, China", "orcid": "0009-0007-1987-3003"}
+  ],
+  "keywords": [
+    "landslide inventory",
+    "rapid post-event mapping",
+    "change detection",
+    "candidate generation",
+    "event-disjoint evaluation",
+    "Sentinel-1",
+    "Sentinel-2",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {"relation": "isVersionOf", "identifier": "https://github.com/xionglovetian/pfrpn-change-interval", "scheme": "url", "resource_type": "software"},
+    {"relation": "isSupplementTo", "identifier": "https://github.com/xionglovetian/pfrpn-change-interval/releases/tag/v1.0.0", "scheme": "url", "resource_type": "software"}
+  ]
+}
