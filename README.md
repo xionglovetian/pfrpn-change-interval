@@ -57,8 +57,8 @@ results/
   run_configs/         per-run config.py + test_metrics.json
 scripts/              data builders, calendar rule, criterion (LOFO/baselines), paired bootstrap, fold diagnostics
 figures/              paper figures (PNG) and the plotting scripts that generate them
-docs/                 compiled manuscript and supplementary material (PDF)
-CHECKSUMS.sha256      SHA256 of every tracked file
+The manuscript and its supplementary material are **not hosted in this repository**;
+they are submitted through the journal. `CHECKSUMS.sha256`      SHA256 of every tracked file
 verify_checksums.py   one-command integrity check
 ```
 
