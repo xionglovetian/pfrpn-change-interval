@@ -7,8 +7,8 @@ this version differs from the earlier one, so the mapping is given explicitly.
 |---|---|---|---|
 | Figure 1 | `_scripts/build_fig01.py` | event inventory tree (see below) | `fig01a_event_panel.pdf/png`, `fig01b_events_map.pdf/png`, and `event_geo.csv` |
 | Figure 2 | `_scripts/build_fig02.py` | none (vector schematic) | `fig02_framework.pdf/png` |
-| Figure 3 | `_scripts/build_fig05_qualitative.py` | `italy_1161/` | `fig05_qualitative.pdf/png` |
-| Figure 4 | `_scripts/build_fig03.py` | `fig03_perfold.csv` | `fig03_cross.pdf/png` |
+| Figure 4 | `_scripts/build_fig05_qualitative.py` | `italy_1161/` | `fig05_qualitative.pdf/png` |
+| Figure 3 | `_scripts/build_fig03.py` | `fig03_perfold.csv` | `fig03_cross.pdf/png` |
 | Figure 8 | `_scripts/build_fig07.py` | `fig07_verifier.csv` | `fig07_verifier.pdf/png` |
 
 Figures 5, 6 and 7 are produced by the analysis code in `scripts/` and `results/`, not from this

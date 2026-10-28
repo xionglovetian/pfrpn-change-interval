@@ -12,7 +12,7 @@ authors:
 
 repository-code: "https://github.com/xionglovetian/pfrpn-change-interval"
 license: MIT
-version: "1.1.4"
+version: "1.1.5"
 date-released: "2026-10-28"
 keywords:
   - landslide inventory

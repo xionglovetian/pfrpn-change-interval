@@ -1,17 +1,18 @@
 # pfrpn-change-interval
 
-> **Version 1.1.0 (2026-10-28) — *Geomatics, Natural Hazards and Risk* version.**
-> This release re-targets the package to the manuscript *Class-agnostic candidate generation and
-> calendar-derived event windows for rapid landslide mapping*. Changes relative to v1.0.0:
-> `docs/paper.pdf` and `docs/supplementary.pdf` are replaced by the GNHR versions; `figures/ghnr/`
-> adds the eight-figure builders for that version together with their input tables and the
-> qualitative tile arrays; `CITATION.cff` and `.zenodo.json` carry the new title and metadata.
-> Code, data and results are unchanged, and the claims table below still maps every number of the
-> earlier version to its evidence.
+> **Version 1.1.5 (2026-10-28) — *Geomatics, Natural Hazards and Risk* version.**
+> This repository carries the code, data definitions, per-image scores and result tables behind the
+> manuscript *Class-agnostic candidate generation and calendar-derived event windows for rapid
+> landslide mapping* (Luoyang Xiong, Juan Meng). **The manuscript and its supplementary material are
+> not hosted here**; they are submitted through the journal.
+> `figures/ghnr/` holds the builders for this version with their input tables and the qualitative
+> tile arrays; `CITATION.cff` and `.zenodo.json` carry the title and metadata. Code, data and results
+> are unchanged from v1.0.0, and the claims table below still maps every number of the earlier
+> version to its evidence.
 >
-> Figure numbering in the GNHR version: Figure 1 `build_fig01.py` (event map), Figure 2
-> `build_fig02.py` (pipeline), Figure 3 `build_fig05_qualitative.py` (one candidate on one tile),
-> Figure 4 `build_fig03.py` (cross-event and cross-region recall), Figure 8 `build_fig07.py`
+> Figure numbering in this version: Figure 1 `build_fig01.py` (event map), Figure 2
+> `build_fig02.py` (pipeline), Figure 3 `build_fig03.py` (cross-event and cross-region recall),
+> Figure 4 `build_fig05_qualitative.py` (one candidate on one tile), Figure 8 `build_fig07.py`
 > (verifier ablation).
 ---
 
