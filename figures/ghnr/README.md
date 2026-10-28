@@ -52,6 +52,14 @@ python figures/ghnr/_scripts/build_fig01.py
 It rewrites `event_geo.csv`; the version tracked in this folder is reproduced byte for byte
 (SHA-256 `5d8f1e5b…`), which is a convenient check that the event tree is the expected one.
 
+## Note on the generated files
+
+The figures themselves are **not** committed to this folder: they are build outputs, and the
+manuscript PDF in `docs/paper.pdf` already carries them. Running a builder writes the files here.
+PNGs are byte-identical between runs; PDFs are not, because matplotlib stamps a creation time into
+the file, so after a rebuild the PDFs no longer match `CHECKSUMS.sha256`. Set `SOURCE_DATE_EPOCH`
+if you need deterministic PDFs.
+
 ## Reproducibility caveat
 
 PNGs are byte-identical between runs. PDFs are not: matplotlib stamps a creation time into the
