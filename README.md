@@ -18,8 +18,8 @@
 Reproduction package for the manuscript
 
 > **Train on the Event, Deploy on the Baseline: The Change Interval Belongs to the Task Specification, not the Model**
-> Luoyang Xiong, Juan Meng\*, Nan Deng, Wenchao Li, Xu Jin, Xiaotian Dong, Yuchai Zhang
-> University of Emergency Management, Sanhe 065201, Hebei, China  ·  \*corresponding author
+> Luoyang Xiong, Juan Meng\*
+> University of Emergency Management, Sanhe, Hebei, China  ·  \*corresponding author
 
 This repository contains the code, data definitions, per-image scores and result artefacts behind every number in the
 paper and its supplementary material. It does **not** contain model checkpoints (33 GB) or the Sen12Landslides imagery
