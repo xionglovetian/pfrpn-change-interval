@@ -15,7 +15,6 @@
 > (verifier ablation).
 ---
 
-
 Reproduction package for the manuscript
 
 > **Train on the Event, Deploy on the Baseline: The Change Interval Belongs to the Task Specification, not the Model**
