@@ -23,7 +23,8 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 EVENTS_ROOT = os.environ.get("PFRPN_EVENTS_ROOT",
     r"D:\PFRPN论文相关材料\10_数据与实验产物\dataset\landslide_multimodal_lb_pos\events")
-OUT = str(BASE)
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # figures/ghnr
+OUT = BASE
 COAST = os.path.join(OUT, "_geo", "ne_110m_coastline.shp")
 
 # event -> (label, lon, lat, status, split, country, trigger, label_dxy)
